@@ -1,15 +1,19 @@
-#ifndef CLASEPOLINOM_POLINOM_H
-#define CLASEPOLINOM_POLINOM_H
-class polinomio{
+#ifndef _CLASEPOLINOM_POLINOM_H_
+#define _CLASEPOLINOM_POLINOM_H_
+#include <iostream>
+#define N 3000
+using namespace std;
+class polinomio
+{
 public:
-        int vector[gradoMAX];
-        friend polinomio(unsigned );
-        friend polinomio::grado()const;                //MIRAR SI HAY QUE QUITAR CONST
-        friend double polinomio::coeficiente(unsigned )const;
-        friend void polinomio::coeficiente(unsigned ,double );
+         polinomio(unsigned gM=1);
+         unsigned grado();                //MIRAR SI HAY QUE QUITAR CONST
+         double coeficiente(unsigned n);
+         void coeficiente(unsigned n,double c);
 private:
-    unsigned gradoMAX;
-    unsigned n;
+        unsigned gradoMAX;
+        unsigned n;
+        double vector[N];
 };
-#endif //CLASEPOLINOM_POLINOM_H
+#endif //_CLASEPOLINOM_POLINOM_H_
 
