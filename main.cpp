@@ -8,6 +8,7 @@ int main()
     cout<<pol.coeficiente(4)<<endl;
     cout<<pol.coeficiente(6)<<endl;
     cout<<pol.coeficiente(7)<<endl;
+    cout<<pol.grado()<<endl;
 
 
 
