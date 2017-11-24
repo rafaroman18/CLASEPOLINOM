@@ -7,9 +7,9 @@ class polinomio
 {
 public:
          polinomio(unsigned gM=1);
-         unsigned grado();                //MIRAR SI HAY QUE QUITAR CONST
-         double coeficiente(unsigned n);
-         void coeficiente(unsigned n,double c);
+         unsigned grado()const ;//MIRAR SI HAY QUE QUITAR CONST
+         double coeficiente(unsigned n) const ;
+         void coeficiente(unsigned n,double c) ;
 private:
         unsigned gradoMAX;
         unsigned n;

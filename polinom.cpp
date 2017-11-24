@@ -11,16 +11,16 @@ polinomio::polinomio(unsigned gM):gradoMAX(gM)  //CONSTRUCTOR
     }
     for(i=N;i>gradoMAX;i--)
     {
-        vector[i]=NULL;
+        vector[i]=0;
     }
 }
 
-unsigned polinomio::grado()
+unsigned polinomio::grado() const
 {
     return gradoMAX;
 }
 
-double polinomio::coeficiente(unsigned n)
+double polinomio::coeficiente(unsigned n) const
 {
     if(n>gradoMAX)
     {
