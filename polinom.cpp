@@ -6,18 +6,15 @@ polinomio::polinomio(unsigned gM):gradoMAX(gM)  //CONSTRUCTOR
     unsigned i;
     for(i=0;i<=gM;i++)
     {
-        vector[i]=1;
+        vector[i]=0;
 
     }
-    for(i=N;i>gradoMAX;i--)
-    {
-        vector[i]=0;
-    }
+
 }
 
 unsigned polinomio::grado() const
 {
-    return gradoMAX;
+    return gradoMAX;                        //MAL, HAY QUE DEVOLVER EL GRADOMAXIMO, ES DECIR, DETECTAR CUAL ES ESTE
 }
 
 double polinomio::coeficiente(unsigned n) const

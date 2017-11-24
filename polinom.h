@@ -12,7 +12,7 @@ public:
          void coeficiente(unsigned n,double c) ;
 private:
         unsigned gradoMAX;
-        unsigned n;
+        unsigned n;                     //HAY QUE SABER QUE HACE
         double vector[N];
 };
 #endif //_CLASEPOLINOM_POLINOM_H_
